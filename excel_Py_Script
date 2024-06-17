@@ -15,6 +15,9 @@ workbook = excel.Workbooks.Open(directory_location)
 
 # Do something with the file (e.g. read or modify data)
 #...
+changes = workbood.active
+changes["A1"] = "Hello, World!"
+changes["B2"] = 42
 
 # Save the file
 workbook.Save()
